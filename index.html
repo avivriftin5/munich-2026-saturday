@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Saturday — Königssee &amp; Salzburg</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;1,9..144,400;1,9..144,700&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --lake:#0F6F6C;
+    --gold:#E09A16;
+    --dome:#B0202F;
+    --sky:#1D6FB8;
+    --plum:#5E3A7E;
+    --pine:#14322C;
+    --cream:#FFF8EC;
+    --ink:#1A2422;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;background:var(--cream);color:var(--ink);
+    font-family:"Inter Tight",system-ui,sans-serif;
+    font-size:17.5px;line-height:1.62;-webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:760px;margin:0 auto;background:var(--cream);}
+
+  /* ---------- hero ---------- */
+  .hero{position:relative;background:var(--lake);}
+  .hero img{
+    display:block;width:100%;height:66vh;min-height:400px;max-height:620px;
+    object-fit:cover;mix-blend-mode:luminosity;opacity:.85;
+  }
+  .hero::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(175deg,rgba(29,111,184,.30) 0%,rgba(15,111,108,.20) 45%,rgba(20,50,44,.92) 100%);
+  }
+  .hero-text{position:absolute;inset:auto 0 0 0;z-index:2;padding:0 30px 40px;color:var(--cream);}
+  .kicker{
+    font-family:"Fraunces",serif;font-style:italic;font-size:20px;
+    color:var(--gold);margin:0 0 10px;
+  }
+  .hero h1{
+    font-family:"Fraunces",Georgia,serif;font-weight:700;
+    font-size:clamp(46px,12vw,84px);line-height:.94;
+    margin:0 0 16px;letter-spacing:-.025em;
+  }
+  .hero h1 span{display:block;font-style:italic;font-weight:400;color:#FFD98A;}
+  .hero .lede{margin:0;font-size:18px;max-width:32ch;color:#DCEDE8;}
+
+  /* ---------- steps ---------- */
+  .step{position:relative;}
+  .shot{position:relative;overflow:hidden;}
+  .shot img{
+    display:block;width:100%;height:clamp(230px,42vw,340px);
+    object-fit:cover;
+  }
+  .shot::after{content:"";position:absolute;inset:0;opacity:.30;mix-blend-mode:multiply;}
+  .s-lake .shot::after{background:var(--lake);}
+  .s-dome .shot::after{background:var(--dome);}
+  .s-sky  .shot::after{background:var(--sky);}
+  .s-gold .shot::after{background:var(--gold);}
+  .s-plum .shot::after{background:var(--plum);}
+  .s-pine .shot::after{background:var(--pine);}
+
+  .tag{
+    position:absolute;left:0;bottom:0;z-index:2;
+    font-family:"Fraunces",serif;font-style:italic;font-weight:700;
+    font-size:17px;color:var(--cream);padding:9px 20px 9px 30px;
+    letter-spacing:.01em;
+  }
+  .s-lake .tag{background:var(--lake);}
+  .s-dome .tag{background:var(--dome);}
+  .s-sky  .tag{background:var(--sky);}
+  .s-gold .tag{background:var(--gold);color:#2C1B00;}
+  .s-plum .tag{background:var(--plum);}
+  .s-pine .tag{background:var(--pine);}
+
+  .body{padding:26px 30px 40px;}
+  .step h2{
+    font-family:"Fraunces",Georgia,serif;font-weight:700;
+    font-size:clamp(29px,6.4vw,38px);line-height:1.06;
+    margin:0 0 12px;letter-spacing:-.02em;
+  }
+  .s-lake h2{color:var(--lake);}
+  .s-dome h2{color:var(--dome);}
+  .s-sky  h2{color:var(--sky);}
+  .s-gold h2{color:#A8700A;}
+  .s-plum h2{color:var(--plum);}
+  .s-pine h2{color:var(--pine);}
+  .step p{margin:0 0 14px;}
+  .step p:last-child{margin-bottom:0;}
+
+  .aside{
+    border-left:3px solid var(--gold);padding:2px 0 2px 16px;
+    font-size:16px;color:#4A5754;margin:18px 0 0;
+  }
+
+  /* ---------- closer ---------- */
+  .closer{
+    background:var(--pine);color:var(--cream);padding:52px 30px 58px;text-align:center;
+  }
+  .closer h2{
+    font-family:"Fraunces",serif;font-weight:400;font-style:italic;
+    font-size:clamp(26px,6vw,34px);line-height:1.2;margin:0 0 14px;color:#FFD98A;
+  }
+  .closer p{margin:0 auto;max-width:36ch;color:#B9CFC8;font-size:16.5px;}
+
+  footer{
+    padding:26px 30px 40px;font-size:12.5px;line-height:1.8;color:#8B958F;
+  }
+
+  @media (max-width:430px){
+    .hero-text,.body,.closer,footer{padding-left:22px;padding-right:22px;}
+    .tag{padding-left:22px;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="hero">
+    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/K%C3%B6nigssee_und_Watzmann.jpg?width=1600" alt="The Königssee below the Watzmann massif">
+    <div class="hero-text">
+      <p class="kicker">Saturday, somewhere better than Munich</p>
+      <h1>Königssee<span>&amp; Salzburg</span></h1>
+      <p class="lede">A green lake in a rock canyon, a schnitzel the size of the plate, and a hangar full of Formula 1 cars. One easy day.</p>
+    </div>
+  </div>
+
+  <section class="step s-lake">
+    <div class="shot">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Elektroboot_am_Koenigssee.jpg?width=1400" alt="An electric boat on the Königssee">
+      <span class="tag">Out of the city</span>
+    </div>
+    <div class="body">
+      <h2>Two hours south, then a boat</h2>
+      <p>Breakfast at the hotel, no alarms, and we roll out mid-morning. The motorway runs south-east until the Alps close in, and it ends at a lake the colour of a bottle, wedged between cliffs that go straight up out of the water.</p>
+      <p>The boats are electric and almost silent — they've run on this lake since 1909, because nothing with an engine is allowed to foul it. In November there's no queue, no coach parties, and one leaves every half hour.</p>
+      <p class="aside">Halfway across the boatman cuts the motor, stands up with a trumpet and plays at the rock face to bring back the echo. It's the oldest tourist trick in Bavaria and it still works.</p>
+    </div>
+  </section>
+
+  <section class="step s-dome">
+    <div class="shot">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/St._Bartholom%C3%A4_%28K%C3%B6nigssee%29.jpg?width=1400" alt="St. Bartholomä church with wine-red onion domes on the lake shore">
+      <span class="tag">The far shore</span>
+    </div>
+    <div class="body">
+      <h2>St. Bartholomä</h2>
+      <p>A little pilgrimage church with wine-red onion domes on a green spit of land, with the Watzmann's east face — the biggest wall in the Eastern Alps — standing 1,800 metres straight up behind it. There's no road here. Boat or nothing.</p>
+      <p>We walk the shore, look at the church, and get back on a boat when we feel like it. There's a hunting-lodge restaurant on the peninsula if anyone needs something before lunch.</p>
+      <p class="aside">In the cold months red deer come down off the mountains to feed here. Summer visitors never see them.</p>
+    </div>
+  </section>
+
+  <section class="step s-sky">
+    <div class="shot">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Salzburg_Altstadt_vom_M%C3%B6nchsberg.jpg?width=1400" alt="Salzburg old town seen from the Mönchsberg">
+      <span class="tag">Across the border</span>
+    </div>
+    <div class="body">
+      <h2>Into Salzburg</h2>
+      <p>Forty-five minutes of country road north and we're in Austria — no border to speak of, no toll sticker needed the way we're going.</p>
+      <p>We park inside the Mönchsberg. The garage is cut into the mountain itself and the lift spits you out in the middle of the old town, which is a good trick for a city built between a cliff and a river.</p>
+    </div>
+  </section>
+
+  <section class="step s-gold">
+    <div class="shot">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Wiener_Schnitzel_vom_Kalb_im_Bellaria_Wien.jpg?width=1400" alt="A veal schnitzel served with potato salad">
+      <span class="tag">The main event</span>
+    </div>
+    <div class="body">
+      <h2>Lunch at Zwettler's</h2>
+      <p>Kaigasse 3, two minutes from the funicular. This is the meal of the day and we're taking our time over it — there's nothing after it that can't wait.</p>
+      <p>Schnitzel <em>vom Kalb</em> — veal, the real thing, hanging off the edge of the plate with potato salad. Goulash, oxtail with polenta, roast pork, and beer they brew themselves.</p>
+      <p class="aside">Save room for one Salzburger Nockerl at the end. It's a soufflé shaped like the three hills around the city, it's meant to be shared, and it's the size of a small child. One for the table.</p>
+    </div>
+  </section>
+
+  <section class="step s-plum">
+    <div class="shot">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/2018_-_May_-_Salzach_River_at_night_in_Salzburg.jpg?width=1600" alt="Salzburg and the Salzach river lit up at night">
+      <span class="tag">Dark by half four</span>
+    </div>
+    <div class="body">
+      <h2>The town, lit</h2>
+      <p>By the time we walk out of lunch it's already dusk, and Salzburg is one of those places that improves in the dark — the fortress floodlit above, the river running black through the middle, narrow lanes with wrought-iron guild signs hanging over them.</p>
+      <p>If anyone wants the whole city from above, the funicular up to the fortress takes two minutes and runs into the evening. If nobody does, we walk instead. Both are fine.</p>
+    </div>
+  </section>
+
+  <section class="step s-pine">
+    <div class="shot">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Salzburg_Hangar-7_by-RaBoe_014.jpg?width=1400" alt="The glass dome of Red Bull Hangar-7 in Salzburg">
+      <span class="tag">One last thing</span>
+    </div>
+    <div class="body">
+      <h2>Hangar-7</h2>
+      <p>A dome of glass and steel by the airport, built by the man who invented Red Bull to house his aeroplanes. Inside: historic aircraft, helicopters, and the Formula 1 cars driven by Verstappen, Vettel and Räikkönen, close enough to touch — though you mustn't.</p>
+      <p>It's free to walk in, it stays open late, and it happens to sit right beside the road home. No reason not to.</p>
+    </div>
+  </section>
+
+  <div class="closer">
+    <h2>Then an hour and a half of motorway, and a nightcap if anyone's still standing.</h2>
+    <p>Kickoff isn't until half past three tomorrow. Nobody needs to be sensible.</p>
+  </div>
+
+  <footer>
+    Photographs from Wikimedia Commons, used under Creative Commons licences —
+    Königssee und Watzmann · Elektroboot am Königssee · St. Bartholomä (Königssee) by Bual.sukhjot1 ·
+    Salzburg Altstadt vom Mönchsberg by AndreasPraefcke · Wiener Schnitzel vom Kalb im Bellaria Wien ·
+    Salzach River at Night in Salzburg · Salzburg Hangar-7 by RaBoe.
+  </footer>
+
+</div>
+</body>
+</html>
