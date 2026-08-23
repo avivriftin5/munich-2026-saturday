@@ -119,12 +119,13 @@
     font-size:19px;color:#8B7A55;margin:0 0 14px;
     border-bottom:1px solid #E3D8C2;padding-bottom:10px;
   }
-  table{width:100%;border-collapse:collapse;font-size:16px;}
+  table{width:100%;border-collapse:collapse;font-size:16px;table-layout:fixed;}
   td{padding:8px 0;vertical-align:top;border-bottom:1px solid #EFE5D2;}
   td.t{
-    width:78px;white-space:nowrap;padding-right:16px;
+    width:104px;white-space:nowrap;padding-right:16px;
     font-variant-numeric:tabular-nums;font-weight:600;color:var(--terra);
   }
+  td.t.range{font-size:14px;letter-spacing:-.01em;}
   tr:last-child td{border-bottom:none;}
   td em{font-style:italic;color:#6B7570;}
 
@@ -155,7 +156,8 @@
   @media (max-width:430px){
     .hero-text,.body,.closer,footer,.sched,.todo,.day{padding-left:22px;padding-right:22px;}
     .tag{padding-left:22px;}
-    td.t{width:66px;padding-right:12px;}
+    td.t{width:98px;padding-right:8px;}
+    td.t.range{font-size:13.5px;}
   }
 </style>
 </head>
@@ -267,7 +269,7 @@
   <div class="day">
     <p class="num">Day two</p>
     <h2>Tuesday 17 November</h2>
-    <p>Everything shut yesterday is open today. Two museums before lunch, then two hours over a steak, then trains all the way to Tel Aviv.</p>
+    <p>Everything shut yesterday is open today. Two museums before lunch, two hours over a steak, half an hour buying presents, then trains all the way to Tel Aviv.</p>
   </div>
 
   <section class="step s-terra">
@@ -303,19 +305,21 @@
       <h3>Regina Bistecca, 12:30</h3>
       <p>Via Ricasoli 14r, two minutes from the Accademia. Bistecca alla fiorentina in a room that used to be an antiquarian bookshop. Two hours, unhurried, table for one — nobody in Florence thinks that's strange.</p>
       <p>Ask for <em>la più piccola</em>, the smallest they'll do. Somewhere between fifty and eighty euros, and it comes rare because that is the only way it is served. Don't ask for it otherwise.</p>
-      <p class="aside">Out at 14:30 with a coffee in Piazza della Repubblica if there's appetite for one, which there probably won't be.</p>
+      <p class="aside">Out at 14:30 sharp — there's shopping to do and the clock is tighter than it looks.</p>
     </div>
   </section>
 
   <section class="step s-arno">
     <div class="shot">
-      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ponte_Vecchio_from_Ponte_Santa_Trinita.jpg?width=1600" alt="Ponte Vecchio seen from Ponte Santa Trinita">
-      <span class="tag">Last hour</span>
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Borgo_san_lorenzo%2C_veduta_di_mattina%2C_02.jpg?width=1400" alt="Borgo San Lorenzo in the morning">
+      <span class="tag">Thirty minutes, no more</span>
     </div>
     <div class="body">
-      <h3>Down to the river, then west</h3>
-      <p>Ponte Santa Trinita gives the best view of the Ponte Vecchio there is — you can't see the Ponte Vecchio properly while standing on it. Then slowly west along the Lungarno, back towards the station.</p>
-      <p>Santa Maria Novella by 15:35, bags collected at 15:45, and that's Florence done.</p>
+      <h3>Borgo San Lorenzo, and then go</h3>
+      <p>Five minutes from the restaurant, and the last thing on the list. Half an hour is the whole budget — 14:40 to 15:10, and at 15:15 you walk, because the bags and the train don't move.</p>
+      <p>Hand luggage sets the rules: nothing wet, nothing that counts as a liquid, nothing that won't survive being wedged into a carry-on for two trains and a flight. That rules out oil, vinegar, honey and truffle paste, which is a gel whatever the label says. What's left is still the best of it.</p>
+      <p><strong>Cantucci</strong> — the almond biscuits, boxed. The most obviously Florentine thing you can carry. <strong>Dried porcini</strong> — weighs nothing, costs little, better than anything sold at home. <strong>Saffron</strong> in small glass vials, over by the spices; Tuscany grows it. <strong>Pici</strong>, the fat hand-rolled local pasta nobody at home will have. <strong>Truffle salt</strong> or a dry porcini rub — the flavour, none of the liquid problem. <strong>Pecorino toscano</strong>, vacuum-sealed — fine in the cabin and it'll last the day easily, though it's the one thing needing the deli counter rather than a shelf. Chocolate or coffee to round out the numbers.</p>
+      <p class="aside">Ask for a sturdy bag at the till, or bring one. It has to survive forty-five minutes on your arm and then a carry-on. Cantucci boxes crush.</p>
     </div>
   </section>
 
@@ -341,10 +345,13 @@
       <tr><td class="t">09:30</td><td>Galleria dell'Accademia — the David, the unfinished Prisoners. <em>Booked timed slot, ~1 hour</em></td></tr>
       <tr><td class="t">10:45</td><td>Bargello — Donatello's two Davids, Michelangelo's Bacchus. <em>Closes ~13:50</em></td></tr>
       <tr><td class="t">12:30</td><td><strong>Regina Bistecca</strong>, Via Ricasoli 14r — bistecca alla fiorentina. Ask for <em>la più piccola</em>, ~€50–80, served rare by tradition</td></tr>
-      <tr><td class="t">14:30</td><td>Out. Coffee in Piazza della Repubblica if wanted</td></tr>
-      <tr><td class="t">15:00</td><td>Down to the river, Ponte Santa Trinita for the view of Ponte Vecchio, then west along the Lungarno</td></tr>
-      <tr><td class="t">15:35</td><td>Santa Maria Novella</td></tr>
-      <tr><td class="t">15:45</td><td>Collect bags</td></tr>
+      <tr><td class="t">14:30</td><td>Out of Regina Bistecca</td></tr>
+      <tr><td class="t">14:35</td><td>Walk to Borgo San Lorenzo</td></tr>
+      <tr><td class="t range">14:40–15:10</td><td><strong>Shopping</strong> — dry goods only, sturdy bag at the till</td></tr>
+      <tr><td class="t">15:15</td><td>Walk west to Santa Maria Novella, ~12 min</td></tr>
+      <tr><td class="t">15:30</td><td>Station</td></tr>
+      <tr><td class="t">15:40</td><td>Collect bags, repack the gifts into your luggage</td></tr>
+      <tr><td class="t">16:05</td><td>Platform</td></tr>
       <tr><td class="t">16:14</td><td>Frecciarossa FR9543 → Roma Termini 17:49</td></tr>
       <tr><td class="t">18:37</td><td>Leonardo Express → Fiumicino 19:09</td></tr>
       <tr><td class="t">21:50</td><td>El Al LY384 → Tel Aviv, landing 02:10</td></tr>
@@ -373,7 +380,7 @@
     Vista de Florencia desde Piazzale Michelangelo by Diego Delso ·
     Basilica di San Miniato al Monte, facciata · Steve Hackett 2013 ·
     'David' by Michelangelo (JBU002) · Museo del Bargello, cortile interno ·
-    Bistecca alla fiorentina · Ponte Vecchio from Ponte Santa Trinita ·
+    Bistecca alla fiorentina · Borgo san lorenzo, veduta di mattina ·
     Frecciarossa 1000 Lambrate.
   </footer>
 
