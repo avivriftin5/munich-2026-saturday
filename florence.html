@@ -127,6 +127,24 @@
     font-size:16px;color:#4A5754;margin:18px 0 0;
   }
 
+  /* ---------- getting there ---------- */
+  .maps{margin:22px 0 0;padding:16px 18px 6px;border-radius:10px;background:#F1E6D0;border-left:4px solid var(--arno);}
+  .maps-h{margin:0 0 8px !important;font-size:12.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#6B6247;}
+  .maps ul{list-style:none;margin:0;padding:0;}
+  .maps li{display:flex;gap:12px;padding:10px 0;border-top:1px solid #E3D6BC;}
+  .maps li:first-child{border-top:none;padding-top:2px;}
+  .leg-mode{flex:0 0 46px;align-self:flex-start;text-align:center;font-size:11.5px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--cream);border-radius:4px;padding:3px 0;margin-top:2px;}
+  .m-taxi{background:var(--gold);color:#2C1B00;}
+  .m-walk{background:var(--olive);}
+  .m-bus{background:var(--arno);}
+  .m-train{background:var(--plum);}
+  .leg-body{display:flex;flex-direction:column;min-width:0;}
+  .leg-when{font-size:13.5px;color:#6B6247;}
+  .leg-name{font-weight:600;font-size:16.5px;line-height:1.35;}
+  .leg-addr{font-size:15px;color:#3E4A47;user-select:all;}
+  .leg-note{font-size:14px;color:#5A6461;font-style:italic;}
+  .leg-body a{margin-top:4px;font-weight:600;font-size:15px;color:var(--arno);text-decoration:none;}
+
   /* ---------- timetable ---------- */
   .sched{padding:8px 30px 44px;}
   .sched h4{
@@ -205,6 +223,20 @@
       <p>EN8194 from Munich touches down at 12:55. Hand luggage only, so it's straight through the terminal and into the taxi queue — Florence Airport is small enough that this is a genuinely quick business. Agree the fixed fare before getting in: around €25–28.</p>
       <p>Ville sull'Arno sits on the Lungarno Cristoforo Colombo, a five-star villa on the river with a spa and a pool. Drop the bag, don't unpack, be back outside by 14:20.</p>
       <p class="aside">The Uffizi, the Accademia, the Pitti and the Bargello are all closed on Mondays. That's not a problem — it's the reason the whole afternoon is outdoors and uphill. Nothing this afternoon has a closing door: if the taxi is slow, the sunset still happens.</p>
+      <div class="maps">
+        <p class="maps-h">Getting there</p>
+        <ul>
+        <li>
+          <span class="leg-mode m-taxi">Taxi</span>
+          <div class="leg-body">
+            <span class="leg-when">13:20 · from the airport rank · ~€25–28 fixed</span>
+            <span class="leg-name">Ville sull'Arno</span>
+            <span class="leg-addr">Lungarno Cristoforo Colombo 1/3/5, 50136 Firenze</span><span class="leg-note">Ask for the fixed fare before you get in</span>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Hotel+Ville+sull%27Arno%2C+Lungarno+Cristoforo+Colombo+1%2C+50136+Firenze&travelmode=driving" target="_blank" rel="noopener">Open in Google Maps →</a>
+          </div>
+        </li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -217,6 +249,29 @@
       <h3>Oltrarno on foot</h3>
       <p>Taxi to Piazza Santo Spirito and start walking. Via Maggio is the antique dealers' street — gilders, framers, furniture restorers, workshops with the doors open and someone actually working inside. Then Piazza della Passera, which is about the size of a large room and one of the nicest corners in the city.</p>
       <p>Lunch, if you can call it that, at Il Panino del Chianti, Via de' Bardi 63r. A panino standing up, around six euros, three breads to choose from and all of them baked that morning. Glass of wine, two euros. Open until 19:30, so there's no rush.</p>
+      <div class="maps">
+        <p class="maps-h">Getting there</p>
+        <ul>
+        <li>
+          <span class="leg-mode m-taxi">Taxi</span>
+          <div class="leg-body">
+            <span class="leg-when">14:35 · from the hotel · ~10 min</span>
+            <span class="leg-name">Piazza Santo Spirito</span>
+            <span class="leg-addr">Piazza Santo Spirito, 50125 Firenze</span>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Piazza+Santo+Spirito%2C+Firenze&travelmode=driving" target="_blank" rel="noopener">Open in Google Maps →</a>
+          </div>
+        </li>
+        <li>
+          <span class="leg-mode m-walk">Walk</span>
+          <div class="leg-body">
+            <span class="leg-when">15:30 · after Via Maggio and Piazza della Passera</span>
+            <span class="leg-name">Il Panino del Chianti</span>
+            <span class="leg-addr">Via de' Bardi 63r, 50125 Firenze</span>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Il+Panino+del+Chianti%2C+Via+de%27+Bardi+63r%2C+Firenze&travelmode=walking" target="_blank" rel="noopener">Open in Google Maps →</a>
+          </div>
+        </li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -229,6 +284,20 @@
       <h3>The Rampe, and the whole city</h3>
       <p>East along Via di San Niccolò, then up the Rampe del Poggi — a zigzag of ramps and fountains cut into the hillside, twenty-five minutes at a gentle climb. No stairs to speak of, and it delivers you straight onto the terrace.</p>
       <p>Piazzale Michelangelo at 16:20, with the sun going down around 16:45. Duomo, Palazzo Vecchio, the bridges, the hills behind — the postcard, but earned on foot rather than by coach.</p>
+      <div class="maps">
+        <p class="maps-h">Getting there</p>
+        <ul>
+        <li>
+          <span class="leg-mode m-walk">Walk</span>
+          <div class="leg-body">
+            <span class="leg-when">15:55 · ~25 min, gentle climb</span>
+            <span class="leg-name">Piazzale Michelangelo</span>
+            <span class="leg-addr">Piazzale Michelangelo, 50125 Firenze</span><span class="leg-note">Google may pick a shorter route. Go east along Via di San Niccolò to Porta San Niccolò and take the Rampe del Poggi up</span>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Piazzale+Michelangelo%2C+Firenze&travelmode=walking" target="_blank" rel="noopener">Open in Google Maps →</a>
+          </div>
+        </li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -242,6 +311,29 @@
       <p>Almost nobody carries on up from the Piazzale, which is their loss. San Miniato is the finest Romanesque church in Tuscany — green and white marble on the front, a thousand-year-old floor inside, and a crypt older than most of the city below it.</p>
       <p>In winter the monks sing Gregorian vespers in the late afternoon — if the timing lands, sit at the back. This is the best forty minutes of the day and it costs nothing.</p>
       <p class="aside">Taxi rank at the Piazzale for the way down — five minutes back to the hotel, and time for a shower before dinner.</p>
+      <div class="maps">
+        <p class="maps-h">Getting there</p>
+        <ul>
+        <li>
+          <span class="leg-mode m-walk">Walk</span>
+          <div class="leg-body">
+            <span class="leg-when">17:00 · 5 min higher</span>
+            <span class="leg-name">San Miniato al Monte</span>
+            <span class="leg-addr">Via delle Porte Sante 34, 50125 Firenze</span>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Basilica+di+San+Miniato+al+Monte%2C+Firenze&travelmode=walking" target="_blank" rel="noopener">Open in Google Maps →</a>
+          </div>
+        </li>
+        <li>
+          <span class="leg-mode m-taxi">Taxi</span>
+          <div class="leg-body">
+            <span class="leg-when">17:45 · from the Piazzale Michelangelo rank</span>
+            <span class="leg-name">Ville sull'Arno</span>
+            <span class="leg-addr">Lungarno Cristoforo Colombo 1/3/5, 50136 Firenze</span>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Hotel+Ville+sull%27Arno%2C+Lungarno+Cristoforo+Colombo+1%2C+50136+Firenze&travelmode=driving" target="_blank" rel="noopener">Open in Google Maps →</a>
+          </div>
+        </li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -255,6 +347,29 @@
       <p>Dinner first at Flora &amp; Fauno, downstairs in the hotel — fresh pasta, 19:30, no need to go anywhere for it. Tell them when you sit down that you're leaving at 20:35.</p>
       <p>Then the good part: the Teatro Cartiere Carrara is thirteen or fourteen minutes east along the Arno. Flat the whole way, same road, no bridge to cross. Walk it.</p>
       <p>Out around half eleven. Walk back along the river if the night is kind, or take a taxi from the rank outside if it isn't.</p>
+      <div class="maps">
+        <p class="maps-h">Getting there</p>
+        <ul>
+        <li>
+          <span class="leg-mode m-walk">Walk</span>
+          <div class="leg-body">
+            <span class="leg-when">20:35 · from the hotel · 13–15 min, flat, along the Arno</span>
+            <span class="leg-name">Teatro Cartiere Carrara</span>
+            <span class="leg-addr">Via Fabrizio De André, corner of Lungarno Aldo Moro, 50136 Firenze</span>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Teatro+Cartiere+Carrara%2C+Via+Fabrizio+De+Andr%C3%A9%2C+50136+Firenze&travelmode=walking" target="_blank" rel="noopener">Open in Google Maps →</a>
+          </div>
+        </li>
+        <li>
+          <span class="leg-mode m-walk">Walk</span>
+          <div class="leg-body">
+            <span class="leg-when">~23:30 · back to the hotel</span>
+            <span class="leg-name">Ville sull'Arno</span>
+            <span class="leg-addr">Lungarno Cristoforo Colombo 1/3/5, 50136 Firenze</span>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Hotel+Ville+sull%27Arno%2C+Lungarno+Cristoforo+Colombo+1%2C+50136+Firenze&travelmode=walking" target="_blank" rel="noopener">Open in Google Maps →</a>
+          </div>
+        </li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -298,6 +413,29 @@
       <p>Breakfast at eight, check out at 08:40, taxi to Santa Maria Novella — about fifteen minutes and fifteen euros. Bags into KiPoint left luggage: along platform 16, follow the blue <em>Luggage Storage</em> signs. Open 07:00–21:00, from six euros, a staffed counter rather than lockers. It's poorly signposted, so allow ten minutes, and have the Frecciarossa booking ready to show at the platform gates.</p>
       <p>Walk in at 09:15 — sixteen euros, and mid-November is off-peak, so there's no need to book. An hour inside. The David is the reason everyone comes, but the unfinished Prisoners in the corridor before him are the ones that stay with you — half-carved figures still stuck in the block.</p>
       <p class="aside">Out at 10:15, and here the day forks. Decide on Monday night: clear sky, go up to Fiesole; rain, stay under roofs. Nothing needs rebooking except the restaurant time.</p>
+      <div class="maps">
+        <p class="maps-h">Getting there</p>
+        <ul>
+        <li>
+          <span class="leg-mode m-taxi">Taxi</span>
+          <div class="leg-body">
+            <span class="leg-when">08:45 · from the hotel · ~15 min, ~€15</span>
+            <span class="leg-name">Firenze Santa Maria Novella — KiPoint left luggage</span>
+            <span class="leg-addr">Along platform 16, Piazza della Stazione, 50123 Firenze</span><span class="leg-note">Allow 10 minutes to find it — poorly signposted</span>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=KiPoint+Firenze+Santa+Maria+Novella&travelmode=driving" target="_blank" rel="noopener">Open in Google Maps →</a>
+          </div>
+        </li>
+        <li>
+          <span class="leg-mode m-walk">Walk</span>
+          <div class="leg-body">
+            <span class="leg-when">after the bags · ~15 min</span>
+            <span class="leg-name">Galleria dell'Accademia</span>
+            <span class="leg-addr">Via Ricasoli 58/60, 50122 Firenze</span>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Galleria+dell%27Accademia%2C+Via+Ricasoli+58%2C+Firenze&travelmode=walking" target="_blank" rel="noopener">Open in Google Maps →</a>
+          </div>
+        </li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -329,6 +467,47 @@
       <p>Out of the Accademia and up Via Ricasoli — two minutes to Piazza San Marco and Bus 7, which runs every twenty minutes. Buy the ticket first at a tabaccheria (the black-and-white "T"); a <em>biglietto multiplo</em> covers both ways. Validate it on board.</p>
       <p>From Piazza Mino, ten to fifteen minutes uphill to the Monastery of San Francesco. It's free, and the panorama over the Arno valley is the whole point. Then down through the village, past the Romanesque Duomo, for a coffee in the piazza before the 12:05 bus back.</p>
       <p class="aside">The archaeological area with the Roman theatre is probably closed on Tuesdays from November to February — sources conflict. Go for the hill, the air and the view; treat the ruins as a bonus.</p>
+      <div class="maps">
+        <p class="maps-h">Getting there</p>
+        <ul>
+        <li>
+          <span class="leg-mode m-walk">Walk</span>
+          <div class="leg-body">
+            <span class="leg-when">10:15 · 2 min up Via Ricasoli</span>
+            <span class="leg-name">Piazza San Marco — Bus 7 stop</span>
+            <span class="leg-addr">Piazza San Marco, 50121 Firenze</span><span class="leg-note">Ticket from a tabaccheria first</span>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Piazza+San+Marco%2C+Firenze&travelmode=walking" target="_blank" rel="noopener">Open in Google Maps →</a>
+          </div>
+        </li>
+        <li>
+          <span class="leg-mode m-bus">Bus</span>
+          <div class="leg-body">
+            <span class="leg-when">10:25 · Bus 7 · ~25 min</span>
+            <span class="leg-name">Fiesole, Piazza Mino</span>
+            <span class="leg-addr">Piazza Mino da Fiesole, 50014 Fiesole</span>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Piazza+Mino%2C+Fiesole&travelmode=transit" target="_blank" rel="noopener">Open in Google Maps →</a>
+          </div>
+        </li>
+        <li>
+          <span class="leg-mode m-walk">Walk</span>
+          <div class="leg-body">
+            <span class="leg-when">11:00 · 10–15 min uphill</span>
+            <span class="leg-name">Monastery of San Francesco</span>
+            <span class="leg-addr">Via San Francesco 13, 50014 Fiesole</span>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Convento+di+San+Francesco%2C+Via+San+Francesco%2C+Fiesole&travelmode=walking" target="_blank" rel="noopener">Open in Google Maps →</a>
+          </div>
+        </li>
+        <li>
+          <span class="leg-mode m-bus">Bus</span>
+          <div class="leg-body">
+            <span class="leg-when">12:05 · Bus 7 down to Piazza San Marco, then 2 min on foot</span>
+            <span class="leg-name">Regina Bistecca</span>
+            <span class="leg-addr">Via Ricasoli 14r, 50122 Firenze</span><span class="leg-note">Booked 12:45 on this version</span>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Regina+Bistecca%2C+Via+Ricasoli+14r%2C+50122+Firenze&travelmode=transit" target="_blank" rel="noopener">Open in Google Maps →</a>
+          </div>
+        </li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -368,6 +547,29 @@
       <h3>Mercato Centrale</h3>
       <p>Seven minutes' walk from the Accademia. The ground floor is the working market — Monday to Saturday, 07:00 to 14:00 — and it's best before eleven, fully stocked and less crowded. Do the gift shopping here. Cash is preferred at the ground-floor stalls.</p>
       <p>Then upstairs to the food hall, open daily from ten until midnight, two dozen counters and more. A coffee, a glass of wine, and then an eight-minute walk to Via Ricasoli for 12:30.</p>
+      <div class="maps">
+        <p class="maps-h">Getting there</p>
+        <ul>
+        <li>
+          <span class="leg-mode m-walk">Walk</span>
+          <div class="leg-body">
+            <span class="leg-when">10:15 · from the Accademia · 7 min</span>
+            <span class="leg-name">Mercato Centrale</span>
+            <span class="leg-addr">Piazza del Mercato Centrale / Via dell'Ariento, 50123 Firenze</span>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Mercato+Centrale+Firenze&travelmode=walking" target="_blank" rel="noopener">Open in Google Maps →</a>
+          </div>
+        </li>
+        <li>
+          <span class="leg-mode m-walk">Walk</span>
+          <div class="leg-body">
+            <span class="leg-when">12:15 · 8 min</span>
+            <span class="leg-name">Regina Bistecca</span>
+            <span class="leg-addr">Via Ricasoli 14r, 50122 Firenze</span><span class="leg-note">Booked 12:30 on this version</span>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Regina+Bistecca%2C+Via+Ricasoli+14r%2C+50122+Firenze&travelmode=walking" target="_blank" rel="noopener">Open in Google Maps →</a>
+          </div>
+        </li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -380,6 +582,29 @@
       <h3>The Officina, Santa Maria Novella</h3>
       <p>Via della Scala 16. The Dominican apothecary, founded in 1221 and open to the public since 1612 — the oldest pharmacy in Europe. Free to walk in, open daily 09:30–20:00. Frescoed vaults, antique glass, and a smell you'll remember.</p>
       <p>It also solves the gifts: soaps, rose water, potpourri — all dry, all carry-on safe. Five minutes from here to the station.</p>
+      <div class="maps">
+        <p class="maps-h">Getting there</p>
+        <ul>
+        <li>
+          <span class="leg-mode m-walk">Walk</span>
+          <div class="leg-body">
+            <span class="leg-when">14:30 · from Regina Bistecca · 12 min</span>
+            <span class="leg-name">Officina Profumo-Farmaceutica di Santa Maria Novella</span>
+            <span class="leg-addr">Via della Scala 16, 50123 Firenze</span>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Officina+Profumo-Farmaceutica+di+Santa+Maria+Novella%2C+Via+della+Scala+16%2C+Firenze&travelmode=walking" target="_blank" rel="noopener">Open in Google Maps →</a>
+          </div>
+        </li>
+        <li>
+          <span class="leg-mode m-walk">Walk</span>
+          <div class="leg-body">
+            <span class="leg-when">15:25 · 5 min</span>
+            <span class="leg-name">Firenze Santa Maria Novella — KiPoint left luggage</span>
+            <span class="leg-addr">Along platform 16, Piazza della Stazione, 50123 Firenze</span>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=KiPoint+Firenze+Santa+Maria+Novella&travelmode=walking" target="_blank" rel="noopener">Open in Google Maps →</a>
+          </div>
+        </li>
+        </ul>
+      </div>
       <p class="aside">Spare time, all indoors and on the station square: the Basilica di Santa Maria Novella, with Masaccio's <em>Trinity</em> — the first true linear perspective in Western painting — or the Museo Novecento for 20th-century Italian art.</p>
     </div>
   </section>
@@ -425,6 +650,29 @@
       <p>Hand luggage sets the rules: no liquids over 100ml. Olive oil, vin santo, balsamic, wine and truffle paste are all out — unless a bag gets checked at Fiumicino. What's left is still the best of it.</p>
       <p><strong>Cantucci</strong> — the almond biscuits, boxed. <strong>Dried porcini</strong> — weighs nothing, better than anything sold at home. <strong>Saffron</strong>; Tuscany grows it. <strong>Pici</strong> or other pasta shapes. <strong>Truffle salt</strong> — the flavour, none of the liquid problem. <strong>Pecorino</strong>, vacuum-packed. Coffee and chocolate to round out the numbers. And on the rainy version, soaps and rose water from the Officina.</p>
       <p>Clear day: Sapori &amp; Dintorni, Borgo San Lorenzo 15/17, straight after lunch. Rainy day: the Mercato Centrale's ground floor, before lunch.</p>
+      <div class="maps">
+        <p class="maps-h">Getting there</p>
+        <ul>
+        <li>
+          <span class="leg-mode m-walk">Walk</span>
+          <div class="leg-body">
+            <span class="leg-when">14:45 · Version A, from Regina Bistecca · ~10 min</span>
+            <span class="leg-name">Sapori &amp; Dintorni (Conad)</span>
+            <span class="leg-addr">Borgo San Lorenzo 15/17, 50123 Firenze</span>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Sapori+%26+Dintorni+Conad%2C+Borgo+San+Lorenzo+15%2C+Firenze&travelmode=walking" target="_blank" rel="noopener">Open in Google Maps →</a>
+          </div>
+        </li>
+        <li>
+          <span class="leg-mode m-walk">Walk</span>
+          <div class="leg-body">
+            <span class="leg-when">15:25 · ~12 min west</span>
+            <span class="leg-name">Firenze Santa Maria Novella — KiPoint left luggage</span>
+            <span class="leg-addr">Along platform 16, Piazza della Stazione, 50123 Firenze</span>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=KiPoint+Firenze+Santa+Maria+Novella&travelmode=walking" target="_blank" rel="noopener">Open in Google Maps →</a>
+          </div>
+        </li>
+        </ul>
+      </div>
       <p class="aside">Shop before collecting the luggage — the Conad beside the station turns away people carrying bags. And ask for a sturdy bag; cantucci boxes crush.</p>
     </div>
   </section>
@@ -438,6 +686,29 @@
       <h3>Three legs to Tel Aviv</h3>
       <p>Frecciarossa FR9543 at 16:14, into Roma Termini at 17:49. The Leonardo Express leaves from platforms 23–24, right at the far eastern end of the station — allow ten minutes to walk there. Every fifteen minutes, flat fare, no assigned seats; buy at a machine or the counter on the day and validate before boarding, unless you're using the app.</p>
       <p>At Terminal 3 by 19:20, two and a half hours before El Al LY384 at 21:50. El Al runs its own security questioning ahead of the normal airport checks, which is why the margin is that size. Landing 02:10.</p>
+      <div class="maps">
+        <p class="maps-h">Getting there</p>
+        <ul>
+        <li>
+          <span class="leg-mode m-walk">Walk</span>
+          <div class="leg-body">
+            <span class="leg-when">17:49 · inside Roma Termini · allow 10 min</span>
+            <span class="leg-name">Leonardo Express, platforms 23–24</span>
+            <span class="leg-addr">Roma Termini, far eastern end of the station</span>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Leonardo+Express%2C+Roma+Termini&travelmode=walking" target="_blank" rel="noopener">Open in Google Maps →</a>
+          </div>
+        </li>
+        <li>
+          <span class="leg-mode m-train">Train</span>
+          <div class="leg-body">
+            <span class="leg-when">18:37 · Leonardo Express · 32 min</span>
+            <span class="leg-name">Fiumicino Airport, Terminal 3</span>
+            <span class="leg-addr">Via dell'Aeroporto di Fiumicino, 00054 Fiumicino</span>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Fiumicino+Airport+Terminal+3&travelmode=transit" target="_blank" rel="noopener">Open in Google Maps →</a>
+          </div>
+        </li>
+        </ul>
+      </div>
     </div>
   </section>
 
