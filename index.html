@@ -103,6 +103,12 @@
     background:#EFE6D2;border-left:4px solid var(--sky);
   }
   .drive p{margin:0;}
+  .drive.optional{background:transparent;border:1.5px dashed #B9AE92;border-left:4px dashed #B9AE92;}
+  .booked{
+    margin:22px 0 0;padding:14px 18px;border-radius:10px;
+    background:var(--gold);color:#2C1B00;font-weight:600;font-size:16.5px;
+  }
+  .booked strong{font-size:20px;}
   .drive-label{font-size:12.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#6B6247;}
   .drive-name{font-weight:600;font-size:17px;margin-top:4px !important;}
   .drive-addr{font-size:16px;color:#3E4A47;user-select:all;}
@@ -122,6 +128,7 @@
     padding:26px 30px 40px;font-size:12.5px;line-height:1.8;color:#8B958F;
   }
 
+  .closer .drive.optional{background:transparent;border-color:#6E8A80;}
   .closer .drive{background:rgba(255,248,236,.08);border-left-color:#FFD98A;text-align:left;max-width:520px;margin:28px auto 0;}
   .closer .drive p{margin:0;max-width:none;font-size:16px;}
   .closer .drive-label{color:#B9CFC8;font-size:12.5px !important;}
@@ -155,12 +162,19 @@
       <span class="tag">Out of the city</span>
     </div>
     <div class="body">
-      <h2>Two hours south, then a boat</h2>
+      <h2>A couple of hours south, then a boat</h2>
       <p>Breakfast at the hotel, then the car from Sixt at the Hauptbahnhof at nine. The motorway runs south-east until the Alps close in, and it ends at a lake the colour of a bottle, wedged between cliffs that go straight up out of the water.</p>
       <p>The boats are electric and almost silent — they've run on this lake since 1909, because nothing with an engine is allowed to foul it. In November there's no queue, no coach parties, and one leaves every half hour.</p>
       <p class="aside">Halfway across the boatman cuts the motor, stands up with a trumpet and plays at the rock face to bring back the echo. It's the oldest tourist trick in Bavaria and it still works.</p>
+      <div class="drive optional">
+        <p class="drive-label">Optional stop on the way · ~1 h 10 in · A8 exit 106 Bernau</p>
+        <p class="drive-name">Schiller Kaffeerösterei Chiemsee</p>
+        <p class="drive-addr">Chiemseestraße 92, 83233 Bernau am Chiemsee, Germany</p>
+        <p class="drive-note">Halfway. A coffee roastery with a lake-view terrace, two minutes off the motorway. Self-service, so 20–25 minutes is plenty. Check the November hours on Google Maps the day before.</p>
+        <a class="drive-go" href="https://www.google.com/maps/dir/?api=1&destination=Schiller+Kaffeer%C3%B6sterei%2C+Chiemseestra%C3%9Fe+92%2C+83233+Bernau+am+Chiemsee&travelmode=driving" target="_blank" rel="noopener">Open in Google Maps →</a>
+      </div>
       <div class="drive">
-        <p class="drive-label">Drive 1 · 09:00 from Sixt, München Hauptbahnhof · ~2 h</p>
+        <p class="drive-label">Drive 1 · 09:00 from Sixt, München Hauptbahnhof · ~2 h 20</p>
         <p class="drive-name">Parkplatz Königssee</p>
         <p class="drive-addr">Seestraße 3, 83471 Schönau am Königssee, Germany</p>
         <p class="drive-note">The big car park at the end of the road, by the boat landing. Pay at the machine: coins (no change given), card, or the Parkster app.</p>
@@ -177,7 +191,7 @@
     <div class="body">
       <h2>St. Bartholomä</h2>
       <p>A little pilgrimage church with wine-red onion domes on a green spit of land, with the Watzmann's east face — the biggest wall in the Eastern Alps — standing 1,800 metres straight up behind it. There's no road here. Boat or nothing.</p>
-      <p>We walk the shore, look at the church, and get back on a boat when we feel like it. There's a hunting-lodge restaurant on the peninsula if anyone needs something before lunch.</p>
+      <p>We walk the shore, look at the church, and take a boat back after about half an hour. It's 35 minutes each way on the water, and lunch in Salzburg is booked, so this isn't the place to linger. There's a hunting-lodge restaurant on the peninsula if anyone needs a coffee.</p>
       <p class="aside">In the cold months red deer come down off the mountains to feed here. Summer visitors never see them.</p>
     </div>
   </section>
@@ -192,7 +206,7 @@
       <p>Forty-five minutes of country road north and we're in Austria — no border to speak of, no toll sticker needed the way we're going.</p>
       <p>We park inside the Mönchsberg. The garage is cut into the mountain itself and the lift spits you out in the middle of the old town, which is a good trick for a city built between a cliff and a river.</p>
       <div class="drive">
-        <p class="drive-label">Drive 2 · Königssee → Salzburg · ~45 min</p>
+        <p class="drive-label">Drive 2 · Königssee → Salzburg · ~45 min · leave the car park by 14:15</p>
         <p class="drive-name">Altstadtgarage Salzburg (Mönchsberg garage)</p>
         <p class="drive-addr">Hildmannplatz 1, 5020 Salzburg, Austria</p>
         <p class="drive-note">Put in the garage, not “Salzburg old town”. The old town is closed to traffic and the sat-nav will go in circles. If Google suggests an Austrian motorway, pick the country-road route through Marktschellenberg instead, which needs no vignette.</p>
@@ -204,11 +218,12 @@
   <section class="step s-gold">
     <div class="shot">
       <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Wiener_Schnitzel_vom_Kalb_im_Bellaria_Wien.jpg?width=1400" alt="A veal schnitzel served with potato salad">
-      <span class="tag">The main event</span>
+      <span class="tag">Booked · 15:30</span>
     </div>
     <div class="body">
       <h2>Lunch at Zwettler's</h2>
       <p>Kaigasse 3, two minutes from the funicular. This is the meal of the day and we're taking our time over it — there's nothing after it that can't wait.</p>
+      <p class="booked">Table booked for <strong>15:30</strong> — the one fixed time of the day. Park by 15:15; it's about ten minutes on foot from the garage.</p>
       <p>Schnitzel <em>vom Kalb</em> — veal, the real thing, hanging off the edge of the plate with potato salad. Goulash, oxtail with polenta, roast pork, and beer they brew themselves.</p>
       <p class="aside">Save room for one Salzburger Nockerl at the end. It's a soufflé shaped like the three hills around the city, it's meant to be shared, and it's the size of a small child. One for the table.</p>
     </div>
@@ -221,7 +236,7 @@
     </div>
     <div class="body">
       <h2>The town, lit</h2>
-      <p>By the time we walk out of lunch it's already dusk, and Salzburg is one of those places that improves in the dark — the fortress floodlit above, the river running black through the middle, narrow lanes with wrought-iron guild signs hanging over them.</p>
+      <p>By the time we walk out of lunch it's already dark, and Salzburg is one of those places that improves in the dark — the fortress floodlit above, the river running black through the middle, narrow lanes with wrought-iron guild signs hanging over them.</p>
       <p>If anyone wants the whole city from above, the funicular up to the fortress takes two minutes and runs into the evening. If nobody does, we walk instead. Both are fine.</p>
     </div>
   </section>
@@ -246,10 +261,17 @@
   </section>
 
   <div class="closer">
-    <h2>Then an hour and a half of motorway, and a nightcap if anyone's still standing.</h2>
+    <h2>Then just under two hours of motorway, and a nightcap if anyone's still standing.</h2>
     <p>Kickoff isn't until half past three tomorrow. Nobody needs to be sensible.</p>
+    <div class="drive optional">
+      <p class="drive-label">Optional stop on the way back · ~50 min in · Munich-bound side</p>
+      <p class="drive-name">Raststätte Samerberg Nord (A8)</p>
+      <p class="drive-addr">An der A8, 83101 Rohrdorf, Germany</p>
+      <p class="drive-note">Right in the middle of the drive, on the Munich-bound side, open 24 hours. A service area with a shop, snacks and toilets, so a stretch and a coffee, nothing more.</p>
+      <a class="drive-go" href="https://www.google.com/maps/dir/?api=1&destination=Rastst%C3%A4tte+Samerberg+Nord%2C+A8%2C+83101+Rohrdorf&travelmode=driving" target="_blank" rel="noopener">Open in Google Maps →</a>
+    </div>
     <div class="drive">
-      <p class="drive-label">Drive 4 · Hangar-7 → Munich, car return · ~1 h 30</p>
+      <p class="drive-label">Drive 4 · Hangar-7 → Munich, car return · ~1 h 50</p>
       <p class="drive-name">Sixt München Hauptbahnhof</p>
       <p class="drive-addr">Arnulfstraße 16–18, 80335 München, Germany</p>
       <p class="drive-note">Returns go to the Bavaria-Parkgarage, ground floor, by the lifts next to the pay machine. The desk is open until 21:00, so check the after-hours key drop when you collect the car.</p>
