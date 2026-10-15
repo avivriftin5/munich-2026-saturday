@@ -98,6 +98,17 @@
   }
 
   /* ---------- closer ---------- */
+  .drive{
+    margin:22px 0 0;padding:16px 18px;border-radius:10px;
+    background:#EFE6D2;border-left:4px solid var(--sky);
+  }
+  .drive p{margin:0;}
+  .drive-label{font-size:12.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#6B6247;}
+  .drive-name{font-weight:600;font-size:17px;margin-top:4px !important;}
+  .drive-addr{font-size:16px;color:#3E4A47;user-select:all;}
+  .drive-note{font-size:14.5px;color:#5A6461;margin-top:8px !important;}
+  .drive-go{display:inline-block;margin-top:10px;font-weight:600;color:var(--sky);text-decoration:none;}
+
   .closer{
     background:var(--pine);color:var(--cream);padding:52px 30px 58px;text-align:center;
   }
@@ -110,6 +121,15 @@
   footer{
     padding:26px 30px 40px;font-size:12.5px;line-height:1.8;color:#8B958F;
   }
+
+  .closer .drive{background:rgba(255,248,236,.08);border-left-color:#FFD98A;text-align:left;max-width:520px;margin:28px auto 0;}
+  .closer .drive p{margin:0;max-width:none;font-size:16px;}
+  .closer .drive-label{color:#B9CFC8;font-size:12.5px !important;}
+  .closer .drive-name{font-size:17px !important;}
+  .closer .drive-note{font-size:14.5px !important;}
+  .closer .drive-name{color:var(--cream);}
+  .closer .drive-addr,.closer .drive-note{color:#D6E2DD;}
+  .closer .drive-go{color:#FFD98A;}
 
   @media (max-width:430px){
     .hero-text,.body,.closer,footer{padding-left:22px;padding-right:22px;}
@@ -136,9 +156,16 @@
     </div>
     <div class="body">
       <h2>Two hours south, then a boat</h2>
-      <p>Breakfast at the hotel, no alarms, and we roll out mid-morning. The motorway runs south-east until the Alps close in, and it ends at a lake the colour of a bottle, wedged between cliffs that go straight up out of the water.</p>
+      <p>Breakfast at the hotel, then the car from Sixt at the Hauptbahnhof at nine. The motorway runs south-east until the Alps close in, and it ends at a lake the colour of a bottle, wedged between cliffs that go straight up out of the water.</p>
       <p>The boats are electric and almost silent — they've run on this lake since 1909, because nothing with an engine is allowed to foul it. In November there's no queue, no coach parties, and one leaves every half hour.</p>
       <p class="aside">Halfway across the boatman cuts the motor, stands up with a trumpet and plays at the rock face to bring back the echo. It's the oldest tourist trick in Bavaria and it still works.</p>
+      <div class="drive">
+        <p class="drive-label">Drive 1 · 09:00 from Sixt, München Hauptbahnhof · ~2 h</p>
+        <p class="drive-name">Parkplatz Königssee</p>
+        <p class="drive-addr">Seestraße 3, 83471 Schönau am Königssee, Germany</p>
+        <p class="drive-note">The big car park at the end of the road, by the boat landing. Pay at the machine: coins (no change given), card, or the Parkster app.</p>
+        <a class="drive-go" href="https://www.google.com/maps/dir/?api=1&destination=Parkplatz+K%C3%B6nigssee%2C+Seestra%C3%9Fe+3%2C+83471+Sch%C3%B6nau+am+K%C3%B6nigssee&travelmode=driving" target="_blank" rel="noopener">Open in Google Maps →</a>
+      </div>
     </div>
   </section>
 
@@ -164,6 +191,13 @@
       <h2>Into Salzburg</h2>
       <p>Forty-five minutes of country road north and we're in Austria — no border to speak of, no toll sticker needed the way we're going.</p>
       <p>We park inside the Mönchsberg. The garage is cut into the mountain itself and the lift spits you out in the middle of the old town, which is a good trick for a city built between a cliff and a river.</p>
+      <div class="drive">
+        <p class="drive-label">Drive 2 · Königssee → Salzburg · ~45 min</p>
+        <p class="drive-name">Altstadtgarage Salzburg (Mönchsberg garage)</p>
+        <p class="drive-addr">Hildmannplatz 1, 5020 Salzburg, Austria</p>
+        <p class="drive-note">Put in the garage, not “Salzburg old town”. The old town is closed to traffic and the sat-nav will go in circles. If Google suggests an Austrian motorway, pick the country-road route through Marktschellenberg instead, which needs no vignette.</p>
+        <a class="drive-go" href="https://www.google.com/maps/dir/?api=1&destination=Altstadtgarage%2C+Hildmannplatz+1%2C+5020+Salzburg&travelmode=driving" target="_blank" rel="noopener">Open in Google Maps →</a>
+      </div>
     </div>
   </section>
 
@@ -201,12 +235,26 @@
       <h2>Hangar-7</h2>
       <p>A dome of glass and steel by the airport, built by the man who invented Red Bull to house his aeroplanes. Inside: historic aircraft, helicopters, and the Formula 1 cars driven by Verstappen, Vettel and Räikkönen, close enough to touch — though you mustn't.</p>
       <p>It's free to walk in, it stays open late, and it happens to sit right beside the road home. No reason not to.</p>
+      <div class="drive">
+        <p class="drive-label">Drive 3 · Mönchsberg garage → Hangar-7 · ~15 min</p>
+        <p class="drive-name">Red Bull Hangar-7</p>
+        <p class="drive-addr">Wilhelm-Spazier-Straße 7A, 5020 Salzburg, Austria</p>
+        <p class="drive-note">On the edge of Salzburg Airport. Free parking beside the building.</p>
+        <a class="drive-go" href="https://www.google.com/maps/dir/?api=1&destination=Hangar-7%2C+Wilhelm-Spazier-Stra%C3%9Fe+7A%2C+5020+Salzburg&travelmode=driving" target="_blank" rel="noopener">Open in Google Maps →</a>
+      </div>
     </div>
   </section>
 
   <div class="closer">
     <h2>Then an hour and a half of motorway, and a nightcap if anyone's still standing.</h2>
     <p>Kickoff isn't until half past three tomorrow. Nobody needs to be sensible.</p>
+    <div class="drive">
+      <p class="drive-label">Drive 4 · Hangar-7 → Munich, car return · ~1 h 30</p>
+      <p class="drive-name">Sixt München Hauptbahnhof</p>
+      <p class="drive-addr">Arnulfstraße 16–18, 80335 München, Germany</p>
+      <p class="drive-note">Returns go to the Bavaria-Parkgarage, ground floor, by the lifts next to the pay machine. The desk is open until 21:00, so check the after-hours key drop when you collect the car.</p>
+      <a class="drive-go" href="https://www.google.com/maps/dir/?api=1&destination=Sixt+Autovermietung+M%C3%BCnchen+Hauptbahnhof%2C+Arnulfstra%C3%9Fe+16-18%2C+80335+M%C3%BCnchen&travelmode=driving" target="_blank" rel="noopener">Open in Google Maps →</a>
+    </div>
   </div>
 
   <footer>
